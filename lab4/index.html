@@ -86,33 +86,41 @@
 				<div class="minor-section">
 					<h2>Task 2: Pseudocode a simple computer game</h2>
 					<p>
-						<li>Repeat with all finger nails</li>
-							</ol>
-							<li>Put hands in large nail lamp one at a time, 1 minute each</li>
-							<li>Reshape nails to desired shape and length</li>
-							<li>Prep for nail design</li>
-							<ol>
-								<li>Buff the nails until all gelx tip are a foggy white</li>
-								<li>Clean off dust with rubbing alcohol</li>
-								<li>Apply base coat gel polish to all nails</li>
-								<li>Then flash under the UV lamp for at most 30 seconds</li>
-							</ol>
-							<li>For white pearl nails</li>
-							<ol>
-								<li>Apply  a milky white gel polish</li>
-								<li>Flash nails under lamp for at max 30 seconds </li>
-								<li>Use rubbing alcohol to remove sticky residue</li>
-								<li>Using a eye shadow applicator take some pearl chrome powder and rub all over the nails</li>
-								<ol>
-									<li>Dust off excess powder</li>
-								</ol>
-								<li>Seal with top coat</li>
-							</ol>
-							<li>Clean off nails with rubbing alcohol </li>
-							<li>Finish with cuticle oil</li>
-						</ol>```</p>
+						<pre><code>
+						Snake
+						// An implementation of the game
+						// Laura Zhou
+						// April 2025
+						
+						// Define variables to hold score, etc.
+						// Draw UI on screen (a grid)
+						// Draw game elements on screen (snake with a starting length of 1, apple)
+						// Take user input
+							// Upon first input, snake begins moving and does not stop 
+							// Based on which button the user presses, change snake direction
+						// While the snake moves, make checks for conditions:
+							// If the snake touches an apple:
+								// Delete the apple and put another apple somewhere else (cannot be in an occupied square),
+								// Add to the snake's length,
+								 //+1 to score variable
+							// If the snake touches a wall (edge of board): 
+								// Stop snake movement, 
+								// Game over
+							// If the snake touches another segment of the snake:
+								// Stop snake movement, 
+								// Game over
+						// On game over:
+							// Update high score variable with current score,
+							// Display game over screen, with current score and high score
+						// Take user input (start new game)
+							// Clear the current score variable for a new game,
+							// Reset board
+								// Snake length reset to 1, 
+								// Snake position and direction reset to starting position,
+								// Apple deleted and replaced in starting position
+						// Take user input (to move snake and play another game, etc.)</code></pre>
+					</p>
 				</div>
-				<img class="screenshot1" src="img/Screenshot 2025-04-17 at 9.13.46 AM.png" width="50%"/>
 			</div>
 		</section>
 		<nav id="links">

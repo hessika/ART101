@@ -1,9 +1,59 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+/* we can use a single css file to style all the files in our wwebsite */
+
+/* you can pick your own background colors, text colors, and fonts */
+
+/* we can select an html element tag, in this case "body" will apply to the whole document */
+body {
+  background-color: #ffcee8;
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+	font-family:'Baloo 2', cursive;
+    color: #f780c0;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  font-size: 200%;
+}
+h1 {
+  margin-bottom: 2px;
+  line-height: 1.2;  /* Reduce line height */
+}
+
+h2 {
+  margin-bottom: 10px;
+  line-height: 1.3;  /* Slightly larger line height for this one */
+}
+
+/* style.css */
+p {
+  font-size: 18px; :'Baloo 2', cursive;
+  color: mediumvioletred;
+}
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #ffffff;
+  background-color: #dce4ff;
+}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #ffffff;
-    background-color: #5284e8;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #ffffff;
+  background-color: #5b9cd8;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.context {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+}

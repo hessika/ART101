@@ -4,33 +4,81 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: #001c69;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+    font-family: Georgia, serif;
+    color: #080075;
 }
 
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+}
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  font-size: 200%;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    font-size: 200%;
+}
+h1 {
+  margin-bottom: 2px;
+  line-height: 1.2;  /* Reduce line height */
 }
 
+h2 {
+    text-align: center;
+  margin-bottom: 10px;
+  line-height: 1.3;  /* Slightly larger line height for this one */
+}
+
+/* style.css */
+p {
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    color: rgb(5, 0, 165);
+}
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  margin: 10;
+  padding: 100px;
+  background-color: #828f9f;
 }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* the period in a CSS selector selects a element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+  border: solid 1px #2026d8;
+  background-color: #bce0ff;
 }
+
+.music {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #2026d8;
+    background-color: #bce0ff;
+  }
+
+.side {
+    display: inline-flex;
+}
+
+.jam {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic{
+    margin-right: 10px;
+}
+
+
+
+

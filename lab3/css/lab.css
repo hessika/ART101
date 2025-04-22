@@ -4,6 +4,26 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    margin-right: 10px;
+    border: solid 1px #00087b;
+    background-color: #cee2ff;
+    width: 400px;
+    height: 600px;
   }
+
+  .box1{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    font-size: 200%;
+}
+h1{
+  font-family: Georgia, serif;
+  color: #d5e7ff;
+}

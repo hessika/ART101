@@ -7,3 +7,31 @@
     border: solid 1px #2d2dff;
     background-color: #bce0ff;
   }
+
+  h3 {
+    padding: 10px;
+    margin-bottom: 10px;
+    border :solid 1px #2d2dff;
+    background-color: #bce0ff;
+  } 
+
+  .output {
+    padding: 10px;
+    margin-bottom: 10px;
+    border :solid 1px #2d2dff;
+    background-color: #bce0ff;
+    display: inline-flex;
+  } 
+
+  .tesla{
+    width: 50%;
+    margin-left: 500px;
+  }
+
+.output{
+  font-family: Georgia, serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color:#7881a5
+  
+}

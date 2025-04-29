@@ -3,6 +3,14 @@
 // Date:
 
 // Constants
+let myTransport = ["bike", "car", "bus"];
+
+let myMainRide = {
+    make: "Tesla",
+    model: "Model Y",
+    year: 2023,
+    color: "QuickSilver"
+}
 
 // Functions
 
@@ -17,5 +25,9 @@ function main() {
   // the code that makes everything happen
 }
 
+// Output
+document.writeln("Kinds of transportation I use: ", myTransport, "</br>");
+document.writeln("My Main Ride: <pre>",
+  JSON.stringify(myMainRide, null, '\t'), "</pre>");
 // let's get this party started
 main();

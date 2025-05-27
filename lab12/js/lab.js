@@ -11,11 +11,11 @@ function whatHappensOnClick() {
   let data = $("#input").val();
   let dataLength = data.length;
 
-  if (data && dataLength <= 18) {
+  if (data && dataLength <= 24) {
     $("#output").append("You have provided: " + data);
     sortIntoAnElement(dataLength);
     console.log("there is some data");
-  } else if (dataLength >= 18) {
+  } else if (dataLength >= 20) {
     $("#output").append("erm are you sure?");
   } else {
     $("#output").append("enter your last name");

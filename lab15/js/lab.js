@@ -1,27 +1,31 @@
 // Using the core $.ajax() method
 const ajaxObj = {
-  url: "https://yesno.wtf/api",
-  type: "GET",
-  dataType: "json",
+    url: "https://yesno.wtf/api",
+    // data: {};
+    type: "GET",
+    dataType: "json"
+    
 }
-
-$("#output").click(function() {
-    console.log("Click!");
+  
+// when user clicks button
+$("#button").click(function() {
+    console.log("click");
+    // use jquery ajax to fetch output
     $.ajax(ajaxObj)
+    // callback for success - chained to ajax
     .done(function(data) {
-      // callback for success
       console.log("Success!");
       console.log(data);
+      // extract the answer from data
       let answer = data.answer;
       let imgURL = data.image;
       let imageHTML = `<img src='${imgURL}'>`;
+      // insert the output in the output div
       $("#output").html("<h3>" + answer + "</h3>");
       $("#output").append(imageHTML);
-  })
-    // callback for failure
+    })
+    // callback for failure - chained to ajax
     .fail(function(xhr, status, errorThrown) {
-      // do stuff
-      console.log(errorThrown + " Status:" + status);
-  })
-});
-
+      console.log(errorThrown + " Status:" + status );
+    })
+ })

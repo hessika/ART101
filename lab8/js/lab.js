@@ -1,35 +1,26 @@
-/*
- * Lab 8: Anon Functions and Callbacks
- * Author: Jessica Chen
- * Date: May 8, 2025
- *
- * This JavaScript file demonstrates the use of the map() function
- * with both named and anonymous callback functions to manipulate 
- * an array of numbers. Results are printed to the console.
- */
-console.log("JavaScript is loaded!");
+// function that evaluates if x is greater than 6
+function greaterThan(x) {
+    return (x > 6);
+};
 
-// Create an array of numbers
-var numbers = [1, 2, 3, 4, 5];
+// test function
+console.log("Is 3 greater than 6? ", greaterThan(3));
+console.log("Is 9 greater than 6? ", greaterThan(9));
 
-// Named function to square a number
-// Takes a single number x and returns x squared
-function squareNumber(x) {
-    var result = x * x;
-    return result;
-}
+var numArray = [5, 13, 7, 3, 20, 4];
+console.log("My Array ^^ ", numArray);
 
-// Use map() with the named function
-var squaredResults = numbers.map(squareNumber);
+var mapResults = numArray.map(greaterThan);
+console.log("Are the numbers in the array greater than 6? ", mapResults);
 
-// Print the results to the console
-console.log("Squared Results: ", squaredResults);  // [1, 4, 9, 16, 25]
-
-// Use map() with an anonymous function to add 10
-var addTenResults = numbers.map(function(x) {
-    var result = x + 10;
-    return result;
+var mapMultiply = numArray.map(function(x) {
+    return (x * 3);
 });
 
-// Print the new results to the console
-console.log("Added 10 Results: ", addTenResults);  // [11, 12, 13, 14, 15]
+console.log("Array multiplied by 3: ", mapMultiply);
+
+$("#output1").html("<p> My Array ^^ : " + JSON.stringify(numArray) + "</p>");
+
+$("#output2").html("<p> Are the numbers in the array greater than 6? " + JSON.stringify(mapResults) + "</p>");
+
+$("#output3").html("<p> Array multiplied by 3: " + JSON.stringify(mapMultiply) + "</p>");

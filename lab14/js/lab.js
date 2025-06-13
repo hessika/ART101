@@ -1,21 +1,18 @@
-function oddNum(x) {
-  return x % 2 !== 0;
+// Sorts the characters of a string in alphabetical order.
+function sortString(inputString) {
+  // We have to convert our string to an array and back again to sort it
+  return inputString.split('').sort().join('');
 }
 
-array = [225, 14, 1, 38, 57, 34, 82];
+// click listener for button
+$("#submit").click(function(){
 
-console.log("Is this odd?", oddNum(1));
-console.log("Is this odd?", oddNum(2));
+// get value of input field
+const userName = $("#user-name").val();
 
-array = [22, 15, 5, 108, 237, 18, 339];
-console.log("My array: ", array);
+// now let's sort it
+userNameSorted = sortString(userName);
 
-var result = array.map(oddNum);
-console.log("Oddness!!", result);
-
-var result = array.map(function(x){
-  return x * x;
+// append a new div to our output div
+$("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
 });
-
-console.log("squared of array", result);
-document.writeln("the numbers!!: " + result);
